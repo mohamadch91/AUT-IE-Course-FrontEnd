@@ -4,9 +4,15 @@ constant for margin and paddings
 :root{
     --sectionMargin: 1%;
     --sectionPadding: 1%;
+    --sectionWidth: 90%;
+    --sectionHeight: 80%;
 }
 
 section {
     margin: var(--sectionMargin);
     padding: var(--sectionPadding);
+    width: var(--sectionWidth);
+    height: var(--sectionHeight);
 }
+
+
