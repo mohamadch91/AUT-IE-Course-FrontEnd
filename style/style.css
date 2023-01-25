@@ -6,6 +6,8 @@ constant for margin and paddings
     --sectionPadding: 1%;
     --sectionWidth: 90%;
     --sectionHeight: 80%;
+    --cardWidht: 80%;
+    --cardHeight: 50%;
 }
 
 section {
