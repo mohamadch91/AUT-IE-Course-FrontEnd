@@ -1,0 +1,12 @@
+/* 
+constant for margin and paddings
+*/
+:root{
+    --sectionMargin: 1%;
+    --sectionPadding: 1%;
+}
+
+section {
+    margin: var(--sectionMargin);
+    padding: var(--sectionPadding);
+}
