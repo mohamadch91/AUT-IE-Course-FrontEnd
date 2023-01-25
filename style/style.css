@@ -2,10 +2,9 @@
 constant for margin and paddings
 */
 :root{
-    --sectionMargin: 1%;
-    --sectionPadding: 1%;
-    --sectionWidth: 90%;
-    --sectionHeight: 80%;
+    --sectionMargin: 1vh;
+    --sectionPadding: 1vw;
+    --sectionHeight: 80vh;
     --cardWidht: 80%;
     --cardHeight: 50%;
 }
@@ -13,8 +12,72 @@ constant for margin and paddings
 section {
     margin: var(--sectionMargin);
     padding: var(--sectionPadding);
-    width: var(--sectionWidth);
+    /* width: var(--sectionWidth); */
     height: var(--sectionHeight);
 }
 
 
+#Header{
+
+    background-image: url("../assets/Header.jpg");
+    background-size:auto;
+    color: white;
+    padding: 5%;
+    min-height: var(--sectionHeight);
+}
+#header-text{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+#header-main{
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+#header-sub{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    width: 35%;
+    padding: 0;
+}
+#Header a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    color: darkgray;
+    font-weight: 400;
+    background-color: aliceblue;
+    margin: 15vh;
+    padding: 1vw;
+    width: 20vw;
+}
+#myBtn {
+    position: fixed;
+    top: 5vh;
+    right: 5vw;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4rem;
+}
+.bar1, .bar2, .bar3 {
+  width: 2vw;
+  height: 0.5vh;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
