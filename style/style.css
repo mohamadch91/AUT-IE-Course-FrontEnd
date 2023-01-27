@@ -1,122 +1,122 @@
 /* 
 constant for margin and paddings
 */
-:root{
-    --sectionMargin: 0.5vh;
-    --sectionPadding: 1vw;
-    --sectionHeight: 100vh;
-    --cardWidht: 20vw;
-    --cardHeight: 50vh;
+:root {
+  --sectionMargin: 0.5vh;
+  --sectionPadding: 1vw;
+  --sectionHeight: 100vh;
+  --cardWidht: 20vw;
+  --cardHeight: 55vh;
 }
 
 section {
-    margin: var(--sectionMargin);
-    padding: var(--sectionPadding);
+  margin: var(--sectionMargin);
+  padding: var(--sectionPadding);
 }
 
-
-#Header{
-    margin: var(--sectionMargin);
-    background-image: url("../assets/Header.jpg");
-    background-size:auto;
-    color: white;
-    padding: 5%;
-    min-height: var(--sectionHeight);
+#Header {
+  margin: var(--sectionMargin);
+  background-image: url("../assets/Header.jpg");
+  background-size: auto;
+  color: white;
+  padding: 5%;
+  min-height: var(--sectionHeight);
 }
-#header-text{
-    margin: 0;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+#header-text {
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
-#header-main{
-    font-size: 5rem;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    width: 50%;
+#header-main {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  width: 50%;
 }
-#header-sub{
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 0;
-    width: 35%;
-    padding: 0;
+#header-sub {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  width: 35%;
+  padding: 0;
 }
 #Header a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 1.3rem;
-    color: darkgray;
-    font-weight: 400;
-    background-color: aliceblue;
-    margin: 15vh;
-    padding: 1vw;
-    width: 20vw;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  color: darkgray;
+  font-weight: 400;
+  background-color: aliceblue;
+  margin: 15vh;
+  padding: 1vw;
+  width: 20vw;
 }
 #myBtn {
-    position: fixed;
-    top: 5vh;
-    right: 5vw;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: white;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4rem;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4rem;
 }
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 2vw;
   height: 0.5vh;
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
 }
-#Lectures{
-
-    background-image: url("../assets/Background.jpg");
-    background-size:auto;
-    color: gray;
-    padding: 10%;
-    min-height: var(--sectionHeight);
-    display: flex;
-
+#Lectures {
+  background-image: url("../assets/Background.jpg");
+  background-size: auto;
+  color: gray;
+  padding: 10%;
+  min-height: var(--sectionHeight);
+  display: flex;
 }
 
 .card {
-    background-color: rgba(228, 228, 228, 0.8);
-    width: var(--cardWidht);
-    max-height: var(--cardHeight);
-    margin: 1vw;
-    margin-top: 5vh;
-    padding: 1vw;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgba(228, 228, 228, 0.8);
+  width: var(--cardWidht);
+  max-height: var(--cardHeight);
+  margin: 1vw;
+  margin-top: 5vh;
+  padding: 1vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-.card-logo{
-    color: gray;
-    width: 10vw;
-    height: 20vh;
-    margin: 0;
-    padding: 0;
-    filter: invert(48%)  hue-rotate(130deg) brightness(95%) contrast(80%);
+.card-logo {
+  color: gray;
+  width: 10vw;
+  height: 20vh;
+  margin: 0;
+  padding: 0;
+  filter: invert(48%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
-.logo-alt{
-    color: gray;
-    font-size: 2rem;
-    font-weight: bold;
+.logo-alt {
+  color: gray;
+  margin: 2vh;
+  font-size: 2rem;
+  font-weight: bold;
 }
-.card-text{
-    text-align: center;
-    font-size: 1.5rem;
+.card-text {
+  text-align: center;
+  font-size: 1.5rem;
 }
