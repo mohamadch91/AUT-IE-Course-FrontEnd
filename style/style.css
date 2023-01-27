@@ -2,9 +2,9 @@
 constant for margin and paddings
 */
 :root{
-    --sectionMargin: 1vh;
+    --sectionMargin: 0.5vh;
     --sectionPadding: 1vw;
-    --sectionHeight: 80vh;
+    --sectionHeight: 100vh;
     --cardWidht: 80%;
     --cardHeight: 50%;
 }
@@ -12,13 +12,11 @@ constant for margin and paddings
 section {
     margin: var(--sectionMargin);
     padding: var(--sectionPadding);
-    /* width: var(--sectionWidth); */
-    height: var(--sectionHeight);
 }
 
 
 #Header{
-
+    margin: var(--sectionMargin);
     background-image: url("../assets/Header.jpg");
     background-size:auto;
     color: white;
@@ -80,4 +78,12 @@ section {
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
+}
+#Lectures{
+
+    background-image: url("../assets/Background.jpg");
+    background-size:auto;
+    color: gray;
+    padding: 5%;
+    min-height: var(--sectionHeight);
 }
