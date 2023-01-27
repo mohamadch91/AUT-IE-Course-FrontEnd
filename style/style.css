@@ -4,9 +4,9 @@ constant for margin and paddings
 :root {
   --sectionMargin: 0.5vh;
   --sectionPadding: 1vw;
-  --sectionHeight: 100vh;
-  --cardWidht: 20vw;
-  --cardHeight: 55vh;
+  --sectionHeight: 85vh;
+  --lecture-cardWidht: 20vw;
+  --lecture-cardHeight: 55vh;
 }
 
 section {
@@ -17,7 +17,7 @@ section {
 #Header {
   margin: var(--sectionMargin);
   background-image: url("../assets/Header.jpg");
-  background-size: auto;
+  background-size: contain;
   color: white;
   padding: 5%;
   min-height: var(--sectionHeight);
@@ -81,18 +81,28 @@ section {
   transition: 0.4s;
 }
 #Lectures {
+    background-color: #287216;
   background-image: url("../assets/Background.jpg");
-  background-size: auto;
+    background-color: #287216;
+  background-size: contain;
   color: gray;
   padding: 10%;
+  z-index: 1;
   min-height: var(--sectionHeight);
   display: flex;
 }
-
-.card {
+#Lectures::before{
+  background-color: rgba(187, 84, 84, 0.37);
+  height: 50%;
+}
+.lecture-card {
+z-index: 9999;
   background-color: rgba(228, 228, 228, 0.8);
-  width: var(--cardWidht);
-  max-height: var(--cardHeight);
+  border-radius: 1%;
+  filter: blur(-10px);
+
+  width: var(--lecture-cardWidht);
+  max-height: var(--lecture-cardHeight);
   margin: 1vw;
   margin-top: 5vh;
   padding: 1vw;
@@ -102,7 +112,7 @@ section {
   justify-content: flex-start;
   align-items: center;
 }
-.card-logo {
+.lecture-card-logo {
   color: gray;
   width: 10vw;
   height: 20vh;
@@ -116,7 +126,7 @@ section {
   font-size: 2rem;
   font-weight: bold;
 }
-.card-text {
+.lecture-card-text {
   text-align: center;
   font-size: 1.5rem;
 }
